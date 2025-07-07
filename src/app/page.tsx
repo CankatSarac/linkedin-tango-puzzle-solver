@@ -7,7 +7,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
-import ClientOnly from "@/components/ClientOnly"
 
 type Symbol = "sun" | "moon" | null
 type Constraint = "equals" | "different" | null
