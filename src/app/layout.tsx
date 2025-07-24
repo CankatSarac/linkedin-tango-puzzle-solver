@@ -44,16 +44,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/favicon-16x16.png?v=2", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png?v=2", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" },
     ],
-    other: [
-      { rel: "icon", url: "/favicon.ico" },
-      { rel: "manifest", url: "/site.webmanifest" },
-    ],
+    shortcut: "/favicon.ico?v=2",
   },
   manifest: "/site.webmanifest",
   category: "Games",
@@ -69,6 +67,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+        <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
