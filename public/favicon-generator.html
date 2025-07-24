@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favicon Generator</title>
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Clear canvas with white background
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, 32, 32);
+        
+        // Draw sun (yellow circle) on left
+        ctx.fillStyle = '#FFD700';
+        ctx.beginPath();
+        ctx.arc(10, 16, 6, 0, 2 * Math.PI);
+        ctx.fill();
+        
+        // Draw moon (blue circle) on right  
+        ctx.fillStyle = '#4169E1';
+        ctx.beginPath();
+        ctx.arc(22, 16, 6, 0, 2 * Math.PI);
+        ctx.fill();
+        
+        // Add border
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(0, 0, 32, 32);
+        
+        // Convert to ICO format (this is a placeholder - you'll need to save as ICO)
+        console.log('Favicon generated');
+    </script>
+</body>
+</html>

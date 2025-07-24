@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .sun { fill: #FFD700; }
+      .moon { fill: #4169E1; }
+      .border { fill: none; stroke: #333; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" fill="white"/>
+  
+  <!-- Sun symbol -->
+  <circle cx="10" cy="16" r="6" class="sun"/>
+  
+  <!-- Moon symbol -->
+  <circle cx="22" cy="16" r="6" class="moon"/>
+  
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="31" height="31" class="border"/>
+</svg>
